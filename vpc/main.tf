@@ -1,0 +1,10 @@
+provider "aws" {
+    region = "us-east-1"
+    access_key = var.access_key_value
+    secret_key = var.secret_key_value
+     
+}
+
+resource "aws_vpc" "myvpc"{
+    cidr_block = "10.0.0.0/16"
+}
